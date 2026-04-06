@@ -1,0 +1,18 @@
+python -u train_graph.py \
+  --dataset MUTAG \
+  --data_seed 2025 \
+  --gpu_id 0 \
+  --result_folder 'result/' \
+  --num_eval_splits 20 \
+  --epochs 40 \
+  --batch_size 493 \
+  --num_epoch_glo 3 \
+  --num_train_gcn 15 \
+  --num_epochs_d 5 \
+  --lr 2.e-3 \
+  --aug 'random2'\
+  --Discriminator_lr 0.008 \
+  --block_size 128 \
+  --projector_hidden_size 128 \
+  --D_hidden_dim 128 \
+  --tau 0.8 
